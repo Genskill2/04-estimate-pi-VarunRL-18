@@ -6,7 +6,7 @@
 float mc_pi(int);
 
 float frandom() {
-  long int q = random();
+  long int q = frandom();
   float ret = (float)q/(float)RAND_MAX;
   return ret;
 }
@@ -49,9 +49,9 @@ for(int i=1;i<=n;i++)
 
 { 
 
-float x= random(); 
+float x= frandom(); 
 
-float y= random(); 
+float y= frandom(); 
 
 if(sqrt(x*x+y*y)<1) 
 
